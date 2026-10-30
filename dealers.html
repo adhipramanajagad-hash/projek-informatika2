@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDEPARTS | Dealers</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #e34b24;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #e34b24;
+        }
+
+        .hero {
+            min-height: 330px;
+            background:
+                linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+                url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1600")
+                center/cover;
+            display: flex;
+            align-items: center;
+            padding: 50px 8%;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #e34b24;
+        }
+
+        .hero p {
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .section {
+            padding: 55px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #777;
+            line-height: 1.6;
+        }
+
+        .brand-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .brand-card {
+            background: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0,0,0,.07);
+            transition: .3s;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .brand-card h3 {
+            font-size: 22px;
+            color: #e34b24;
+            margin-bottom: 10px;
+        }
+
+        .brand-card p {
+            font-size: 14px;
+            color: #777;
+            line-height: 1.5;
+        }
+
+        .dealer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .dealer-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 3px 12px rgba(0,0,0,.07);
+            border-top: 4px solid #e34b24;
+        }
+
+        .dealer-card h3 {
+            margin-bottom: 15px;
+        }
+
+        .dealer-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .dealer-btn {
+            display: inline-block;
+            background: #e34b24;
+            color: white;
+            padding: 11px 18px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .dealer-btn:hover {
+            background: #bd3517;
+        }
+
+        .join-section {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 55px 8%;
+        }
+
+        .join-section h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .join-section p {
+            color: #ccc;
+            line-height: 1.7;
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        footer {
+            background: #080808;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer span {
+            color: #e34b24;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">RIDEPARTS</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="home.html">Beranda</a>
+        <a href="products.html">Produk</a>
+        <a href="gear.html">Gear</a>
+        <a href="dealers.html">Dealer</a>
+        <a href="service.html">Service</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>OUR <span>DEALERS</span></h1>
+        <p>
+            Temukan informasi merek dan mitra penjualan
+            RIDEPARTS. Kami menghadirkan berbagai pilihan
+            sparepart dan aksesoris untuk kebutuhan modifikasi
+            serta perawatan sepeda motor.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+
+    <div class="section-title">
+        <h2>Official Brands</h2>
+        <p>
+            Beberapa merek sparepart dan aksesoris motor
+            yang dapat kamu temukan di katalog RIDEPARTS.
+        </p>
+    </div>
+
+    <div class="brand-container">
+
+        <div class="brand-card">
+            <h3>ÖHLINS</h3>
+            <p>Suspensi dan komponen peningkatan performa kendaraan.</p>
+        </div>
+
+        <div class="brand-card">
+            <h3>BREMBO</h3>
+            <p>Komponen sistem pengereman sepeda motor.</p>
+        </div>
+
+        <div class="brand-card">
+            <h3>YSS</h3>
+            <p>Produk suspensi untuk berbagai jenis sepeda motor.</p>
+        </div>
+
+        <div class="brand-card">
+            <h3>RCB</h3>
+            <p>Sparepart dan aksesoris untuk modifikasi motor.</p>
+        </div>
+
+        <div class="brand-card">
+            <h3>UMA RACING</h3>
+            <p>Komponen performa dan kebutuhan racing.</p>
+        </div>
+
+        <div class="brand-card">
+            <h3>AKRAPOVIČ</h3>
+            <p>Sistem knalpot dan komponen performa kendaraan.</p>
+        </div>
+
+        <div class="brand-card">
+            <h3>DID</h3>
+            <p>Rantai dan komponen penggerak sepeda motor.</p>
+        </div>
+
+        <div class="brand-card">
+            <h3>NGK</h3>
+            <p>Busi dan komponen sistem pengapian kendaraan.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" style="background:#eee;">
+
+    <div class="section-title">
+        <h2>Dealer Information</h2>
+        <p>Informasi tempat dan layanan penjualan RIDEPARTS.</p>
+    </div>
+
+    <div class="dealer-container">
+
+        <div class="dealer-card">
+            <h3>RIDEPARTS Main Store</h3>
+            <p>
+                <strong>Alamat:</strong><br>
+                Masukkan alamat toko kamu di sini.
+            </p>
+            <p>
+                <strong>Layanan:</strong><br>
+                Sparepart, aksesoris, dan perlengkapan riding.
+            </p>
+            <a href="kontak.html" class="dealer-btn">Hubungi Toko</a>
+        </div>
+
+        <div class="dealer-card">
+            <h3>Online Store</h3>
+            <p>
+                <strong>Lokasi:</strong><br>
+                Layanan pembelian secara online.
+            </p>
+            <p>
+                <strong>Layanan:</strong><br>
+                Informasi produk dan pemesanan melalui kontak toko.
+            </p>
+            <a href="kontak.html" class="dealer-btn">Hubungi Toko</a>
+        </div>
+
+        <div class="dealer-card">
+            <h3>Partner Dealer</h3>
+            <p>
+                <strong>Lokasi:</strong><br>
+                Informasi mitra dealer akan diperbarui.
+            </p>
+            <p>
+                <strong>Layanan:</strong><br>
+                Informasi ketersediaan sparepart dan aksesoris.
+            </p>
+            <a href="kontak.html" class="dealer-btn">Hubungi Toko</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="join-section">
+    <h2>Become Our Partner</h2>
+
+    <p>
+        Tertarik bekerja sama dengan RIDEPARTS?
+        Hubungi kami untuk mendapatkan informasi
+        mengenai peluang kemitraan dan penjualan produk.
+    </p>
+
+    <a href="kontak.html" class="dealer-btn">
+        Contact Us
+    </a>
+</section>
+
+<footer>
+    <p>&copy; 2026 <span>RIDEPARTS</span>. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+

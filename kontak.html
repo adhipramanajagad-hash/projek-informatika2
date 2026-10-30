@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - RIDEPARTS</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* HEADER */
+        header {
+            background: #171717;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #e34b24;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav .active {
+            color: #e34b24;
+        }
+
+        /* JUDUL */
+        .hero {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        /* KONTAK */
+        .contact-container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .contact-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .contact-title h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .contact-title p {
+            color: #777;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 20px #00000010;
+            transition: 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .contact-card p {
+            color: #777;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: #e34b24;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-btn:hover {
+            background: #bd3516;
+        }
+
+        /* INFORMASI */
+        .information {
+            background: #fff;
+            padding: 35px;
+            margin-top: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .information h2 {
+            margin-bottom: 15px;
+        }
+
+        .information p {
+            color: #777;
+            line-height: 1.7;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #171717;
+            color: #aaa;
+            padding: 25px 7%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            RIDE<span>PARTS.</span>
+        </div>
+
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="gear.html">GEAR</a>
+            <a href="dealers.html">DEALERS</a>
+            <a href="service.html">SERVICE</a>
+            <a href="kontak.html" class="active">KONTAK</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Hubungi Kami</h1>
+
+        <p>
+            Punya pertanyaan atau ingin mengetahui
+            produk kami lebih lanjut?
+            Hubungi RIDEPARTS melalui media sosial.
+        </p>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="contact-container">
+
+        <div class="contact-title">
+            <h2>Contact Information</h2>
+
+            <p>
+                Kami siap membantu kebutuhan sparepart
+                dan modifikasi motor kamu.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+
+            <!-- INSTAGRAM -->
+            <div class="contact-card">
+
+                <div class="icon">📸</div>
+
+                <h3>Instagram</h3>
+
+                <p>
+                    Ikuti Instagram kami untuk melihat
+                    informasi dan update produk terbaru.
+                </p>
+
+                <a
+                    href="https://www.instagram.com/r_adhipramana_jagad/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-btn">
+
+                    @r_adhipramana_jagad
+
+                </a>
+
+            </div>
+
+            <!-- EMAIL -->
+            <div class="contact-card">
+
+                <div class="icon">✉️</div>
+
+                <h3>Email</h3>
+
+                <p>
+                    Hubungi kami melalui email
+                    untuk pertanyaan dan kerja sama.
+                </p>
+
+                <a
+                    href="mailto:emailkamu@example.com"
+                    class="contact-btn">
+
+                    Kirim Email
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- INFORMASI -->
+        <div class="information">
+
+            <h2>RIDEPARTS.</h2>
+
+            <p>
+                RIDEPARTS menyediakan berbagai kebutuhan
+                sparepart, aksesori, dan komponen modifikasi
+                motor. Kami hadir untuk membantu pengendara
+                menemukan produk yang sesuai dengan
+                kebutuhan dan gaya mereka.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <span>
+            <strong>RIDEPARTS.</strong>
+            Sparepart & Aksesori Motor
+        </span>
+
+        <span>
+            © 2026 RIDEPARTS. All Rights Reserved.
+        </span>
+
+    </footer>
+
+</body>
+</html>
+

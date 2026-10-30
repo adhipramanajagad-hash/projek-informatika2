@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service - RIDEPARTS</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* HEADER */
+        header {
+            background: #171717;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #e34b24;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav .active {
+            color: #e34b24;
+        }
+
+        /* HERO */
+        .hero {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #ccc;
+            line-height: 1.7;
+        }
+
+        /* SERVICE CONTAINER */
+        .container {
+            max-width: 1050px;
+            margin: 60px auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #777;
+        }
+
+        /* INFORMASI TOKO */
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px #00000010;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 42px;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #777;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .service-card strong {
+            color: #222;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e34b24;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #bd3516;
+        }
+
+        /* JAM OPERASIONAL */
+        .hours {
+            background: white;
+            padding: 35px;
+            margin-top: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px #00000010;
+        }
+
+        .hours h2 {
+            margin-bottom: 20px;
+        }
+
+        .hours p {
+            display: flex;
+            justify-content: space-between;
+            padding: 13px 0;
+            border-bottom: 1px solid #eee;
+            color: #666;
+        }
+
+        .hours p:last-child {
+            border-bottom: none;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #171717;
+            color: #aaa;
+            padding: 25px 7%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            RIDE<span>PARTS.</span>
+        </div>
+
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="gear.html">GEAR</a>
+            <a href="dealers.html">DEALERS</a>
+            <a href="service.html" class="active">SERVICE</a>
+            <a href="kontak.html">KONTAK</a>
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <h1>Our Service</h1>
+
+        <p>
+            Kami siap membantu kebutuhan sparepart
+            dan informasi produk RIDEPARTS.
+            Hubungi atau kunjungi toko kami.
+        </p>
+
+    </section>
+
+    <!-- INFORMASI SERVICE -->
+    <main class="container">
+
+        <div class="section-title">
+            <h2>Informasi Layanan</h2>
+
+            <p>
+                Temukan informasi alamat dan kontak
+                resmi RIDEPARTS.
+            </p>
+        </div>
+
+        <div class="service-grid">
+
+            <!-- ALAMAT -->
+            <div class="service-card">
+
+                <div class="icon">📍</div>
+
+                <h3>Alamat Toko</h3>
+
+                <p>
+                    <strong>RIDEPARTS Store</strong>
+                    <br>
+                    Masukkan alamat lengkap toko kamu di sini.
+                    <br>
+                    Kota, Provinsi, Indonesia.
+                </p>
+
+                <a
+                    href="https://www.google.com/maps"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn">
+
+                    Lihat Lokasi
+
+                </a>
+
+            </div>
+
+            <!-- TELEPON -->
+            <div class="service-card">
+
+                <div class="icon">📞</div>
+
+                <h3>Nomor Telepon</h3>
+
+                <p>
+                    Hubungi kami untuk informasi produk,
+                    ketersediaan sparepart, dan pertanyaan
+                    seputar layanan RIDEPARTS.
+                    <br><br>
+
+                    <strong>08xx-xxxx-xxxx</strong>
+                </p>
+
+                <a
+                    href="tel:+628xxxxxxxxxx"
+                    class="btn">
+
+                    Hubungi Kami
+
+                </a>
+
+            </div>
+
+            <!-- WHATSAPP -->
+            <div class="service-card">
+
+                <div class="icon">💬</div>
+
+                <h3>WhatsApp</h3>
+
+                <p>
+                    Kirim pesan kepada kami untuk
+                    mendapatkan informasi produk
+                    dan pelayanan lebih lanjut.
+                </p>
+
+                <a
+                    href="https://wa.me/628xxxxxxxxxx"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn">
+
+                    Chat WhatsApp
+
+                </a>
+
+            </div>
+
+            <!-- JAM OPERASIONAL -->
+            <div class="service-card">
+
+                <div class="icon">🕒</div>
+
+                <h3>Jam Operasional</h3>
+
+                <p>
+                    Senin - Jumat : 08.00 - 17.00 WIB
+                    <br>
+                    Sabtu : 08.00 - 15.00 WIB
+                    <br>
+                    Minggu : Tutup
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- INFORMASI TAMBAHAN -->
+        <div class="hours">
+
+            <h2>Informasi RIDEPARTS</h2>
+
+            <p>
+                <span>Nama Toko</span>
+                <strong>RIDEPARTS</strong>
+            </p>
+
+            <p>
+                <span>Bidang Usaha</span>
+                <strong>Sparepart Motor</strong>
+            </p>
+
+            <p>
+                <span>Layanan</span>
+                <strong>Penjualan & Informasi Produk</strong>
+            </p>
+
+            <p>
+                <span>Instagram</span>
+                <strong>@r_adhipramana_jagad</strong>
+            </p>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <span>
+            <strong>RIDEPARTS.</strong>
+            Sparepart & Aksesori Motor
+        </span>
+
+        <span>
+            © 2026 RIDEPARTS. All Rights Reserved.
+        </span>
+
+    </footer>
+
+</body>
+</html>

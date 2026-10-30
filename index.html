@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDEPARTS | Motorcycle Parts Store</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            color: #e34b24;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 17px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: .3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #e34b24;
+        }
+
+        .hero {
+            min-height: 430px;
+            background:
+                linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+                url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1600")
+                center/cover;
+
+            display: flex;
+            align-items: center;
+            padding: 60px 8%;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #e34b24;
+        }
+
+        .hero p {
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e34b24;
+            color: white;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            background: #bd3517;
+        }
+
+        .section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .section > p {
+            color: #777;
+            margin-bottom: 35px;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .menu-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0,0,0,.08);
+            transition: .3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-card h3 {
+            color: #e34b24;
+            margin-bottom: 15px;
+        }
+
+        .menu-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            background: #111;
+            color: white;
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #e34b24;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        footer {
+            background: #080808;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer span {
+            color: #e34b24;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">RIDEPARTS</div>
+
+        <nav>
+            <a href="dealers.html">Dealers</a>
+            <a href="gear.html">Gear</a>
+            <a href="home.html">Home</a>
+            <a href="index.html" class="active">Index</a>
+            <a href="kontak.html">Kontak</a>
+            <a href="products.html">Products</a>
+            <a href="service.html">Service</a>
+            <a href="sumber.html">Sumber</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>WELCOME TO <span>RIDEPARTS</span></h1>
+
+            <p>
+                Your Motorcycle Parts & Accessories Store.
+                Temukan berbagai pilihan sparepart, aksesoris,
+                dan komponen modifikasi motor dari merek
+                lokal maupun internasional.
+            </p>
+
+            <a href="products.html" class="btn">
+                EXPLORE PRODUCTS
+            </a>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section">
+        <h2>EXPLORE RIDEPARTS</h2>
+
+        <p>
+            Pilih halaman untuk melihat informasi
+            dan layanan yang tersedia.
+        </p>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <h3>Dealers</h3>
+                <p>Informasi merek dan mitra penjualan sparepart.</p>
+                <a href="dealers.html" class="btn">Visit Page</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>Gear</h3>
+                <p>Helm, jaket, sarung tangan, dan perlengkapan riding.</p>
+                <a href="gear.html" class="btn">Visit Page</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>Home</h3>
+                <p>Informasi utama dan pengenalan RIDEPARTS.</p>
+                <a href="home.html" class="btn">Visit Page</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>Index</h3>
+                <p>Halaman utama dan pusat navigasi website.</p>
+                <a href="index.html" class="btn">Visit Page</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>Kontak</h3>
+                <p>Hubungi RIDEPARTS untuk informasi lebih lanjut.</p>
+                <a href="kontak.html" class="btn">Visit Page</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>Products</h3>
+                <p>Temukan berbagai sparepart dan komponen motor.</p>
+                <a href="products.html" class="btn">Visit Page</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>Service</h3>
+                <p>Informasi layanan dan perawatan kendaraan.</p>
+                <a href="service.html" class="btn">Visit Page</a>
+            </div>
+
+            <div class="menu-card">
+                <h3>Sumber</h3>
+                <p>Daftar referensi dan sumber informasi website.</p>
+                <a href="sumber.html" class="btn">Visit Page</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>ABOUT RIDEPARTS</h2>
+
+        <p>
+            RIDEPARTS merupakan website katalog sparepart
+            dan aksesoris sepeda motor yang menyediakan
+            informasi berbagai produk untuk kebutuhan
+            perawatan, peningkatan performa, dan modifikasi motor.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 <span>RIDEPARTS</span>. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
